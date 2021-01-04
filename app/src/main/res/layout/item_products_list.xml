@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cv_productsList"
-        android:layout_width="180dp"
-        android:layout_height="260dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="186dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="4dp"
         android:clickable="true"
         android:focusable="true"
         android:longClickable="true"
         android:theme="@style/Theme.MaterialComponents.Light"
-        app:cardCornerRadius="8dp"
+        app:cardCornerRadius="12dp"
         app:cardElevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -27,7 +30,7 @@
             <ImageView
                 android:id="@+id/iv_productsList"
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
+                android:layout_height="170dp"
                 android:scaleType="fitXY"
                 android:src="@mipmap/ic_launcher"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -36,7 +39,7 @@
 
             <ImageView
                 android:id="@+id/iv_shade_productsList"
-                android:layout_width="60dp"
+                android:layout_width="76dp"
                 android:layout_height="30dp"
                 android:src="@color/grey_300"
                 app:layout_constraintBottom_toBottomOf="@id/iv_productsList"
@@ -50,16 +53,18 @@
                 android:layout_margin="6dp"
                 android:max="1"
                 android:numStars="1"
+                android:progressTint="@color/amber_A700"
                 android:rating="1"
                 app:layout_constraintBottom_toBottomOf="@id/iv_productsList"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="@id/iv_shade_productsList" />
 
             <TextView
+                android:id="@+id/tv_rateCount_productsList"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="(6) 4.8"
-                android:textSize="11dp"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@id/iv_productsList"
                 app:layout_constraintLeft_toLeftOf="@id/iv_shade_productsList"
                 app:layout_constraintRight_toLeftOf="@id/rb_productsList"
@@ -67,24 +72,26 @@
 
             <TextView
                 android:id="@+id/tv_title_productsList"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="6dp"
+                android:ellipsize="end"
+                android:maxLines="1"
                 android:text="پیاز داغ نگینی خانگی"
                 android:textColor="@color/black"
-                app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/iv_productsList" />
 
             <TextView
                 android:id="@+id/tv_description_productsList"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="6dp"
                 android:text="غرفه: سلامتی و زیبایی"
-                android:textSize="12dp"
-                app:layout_constraintRight_toRightOf="parent"
+                android:textSize="12sp"
                 app:layout_constraintTop_toBottomOf="@id/tv_title_productsList" />
 
             <TextView
@@ -93,19 +100,24 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="6dp"
                 android:layout_marginBottom="12dp"
+                android:maxWidth="60dp"
+                android:maxLines="1"
                 android:text="200 گرم"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent" />
 
             <TextView
+                android:id="@+id/tv_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="6dp"
                 android:layout_marginBottom="12dp"
+                android:maxWidth="100dp"
+                android:maxLines="1"
                 android:text="400,000,000 تومان"
                 android:textColor="@color/black"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent" />
 

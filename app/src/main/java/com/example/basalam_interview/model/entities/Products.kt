@@ -1,7 +1,6 @@
-package com.example.basalam_interview.Model.Entities
+package com.example.basalam_interview.model.entities
 
 import androidx.room.Entity
-import androidx.room.Ignore
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "tbl_products")

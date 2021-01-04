@@ -1,12 +1,11 @@
-package com.example.basalam_interview.Model.LocalDataSource
+package com.example.basalam_interview.model.localDataSource
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.basalam_interview.Model.Entities.Products
-import io.reactivex.Completable
+import com.example.basalam_interview.model.entities.Products
 
 @Dao
 interface ProductsDao {

@@ -1,9 +1,9 @@
-package com.example.basalam_interview.Di.Modules
+package com.example.basalam_interview.di.modules
 
 import android.content.Context
 import androidx.room.Room
-import com.example.basalam_interview.Model.LocalDataSource.ProductsDao
-import com.example.basalam_interview.Model.LocalDataSource.RoomConfig.ProductsDatabase
+import com.example.basalam_interview.model.localDataSource.ProductsDao
+import com.example.basalam_interview.model.localDataSource.roomConfig.ProductsDatabase
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

@@ -1,8 +1,6 @@
-package com.example.basalam_interview.Model.RemoteDataSource
+package com.example.basalam_interview.model.remoteDataSource
 
-import com.example.basalam_interview.Model.Entities.Products
 import com.google.gson.JsonObject
-import okhttp3.RequestBody
 import retrofit2.http.Body
 import retrofit2.http.POST
 

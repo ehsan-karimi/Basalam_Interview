@@ -1,18 +1,13 @@
-package com.example.basalam_interview.Main
+package com.example.basalam_interview.main
 
 import android.annotation.SuppressLint
-import android.content.Intent
-import android.graphics.Color
-import android.graphics.PorterDuff
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ProgressBar
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.basalam_interview.Model.Entities.Products
+import com.bumptech.glide.Glide
+import com.example.basalam_interview.model.entities.Products
 import com.example.basalam_interview.R
-import com.google.android.material.card.MaterialCardView
 import kotlinx.android.synthetic.main.item_products_list.view.*
 
 class ProductsListAdapter(employeeModel: List<Products>) :
@@ -33,18 +28,16 @@ class ProductsListAdapter(employeeModel: List<Products>) :
     }
 
     inner class EmployeeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-                private val vendor: TextView? = null
 
         @SuppressLint("SetTextI18n")
         fun bind(employeeModel: Products) {
-//            fullNameTv.setText(employeeModel.getFirstname() + " " + employeeModel.getLastname());
-                itemView.tv_title_productsList.setText(employeeModel.name)
-        }
-
-        init {
-            //            fullNameTv = itemView.findViewById(R.id.tv_student_fullName);
-
-
+            itemView.tv_title_productsList.setText(employeeModel.name)
+            itemView.tv_description_productsList.setText(employeeModel.vendor)
+            itemView.tv_weight_productsList.setText(employeeModel.weight.toString() + " " + "گرم")
+            itemView.tv_rateCount_productsList.setText("(" + employeeModel.ratingCount.toString() + ")" + " " + employeeModel.rating.toString())
+            val a = String.format("%,d", employeeModel.price.toLong())
+            itemView.tv_price.setText(a + " " + "تومان")
+            Glide.with(itemView).load(employeeModel.photo).into(itemView.iv_productsList);
         }
     }
 

@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="grey_300">#cce0e0e0</color>
+
+    <color name="amber_A700">#ffab00</color>
 </resources>

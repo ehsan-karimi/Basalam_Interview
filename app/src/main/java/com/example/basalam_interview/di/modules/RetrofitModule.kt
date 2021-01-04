@@ -1,6 +1,6 @@
-package com.example.basalam_interview.Di.Modules
+package com.example.basalam_interview.di.modules
 
-import com.example.basalam_interview.Model.RemoteDataSource.Api_Interface
+import com.example.basalam_interview.model.remoteDataSource.Api_Interface
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient

@@ -1,8 +1,8 @@
-package com.example.basalam_interview.Di.Modules
+package com.example.basalam_interview.di.modules
 
-import com.example.basalam_interview.Model.LocalDataSource.ProductsDao
-import com.example.basalam_interview.Model.RemoteDataSource.Api_Interface
-import com.example.basalam_interview.Repositories.ProductsRepository
+import com.example.basalam_interview.model.localDataSource.ProductsDao
+import com.example.basalam_interview.model.remoteDataSource.Api_Interface
+import com.example.basalam_interview.repositories.ProductsRepository
 import dagger.Module
 import dagger.Provides
 

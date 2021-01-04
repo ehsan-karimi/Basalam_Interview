@@ -73,17 +73,21 @@ dependencies {
     // OkHttp Interceptor (https://square.github.io/okhttp/)
     implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
 
-    // LiveData (https://developer.android.com/jetpack/androidx/releases/lifecycle)
+
     def lifecycle_version = "2.2.0"
-    // ViewModel
+    // ViewModel (https://developer.android.com/jetpack/androidx/releases/lifecycle)
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-    // LiveData
+    // LiveData (https://developer.android.com/jetpack/androidx/releases/lifecycle)
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
-    // Lifecycles only (without ViewModel or LiveData)
+    // Lifecycles only (without ViewModel or LiveData) (https://developer.android.com/jetpack/androidx/releases/lifecycle)
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
-    // Annotation processor
+    // Annotation processor (https://developer.android.com/jetpack/androidx/releases/lifecycle)
     kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
-    // alternately - if using Java8, use the following instead of lifecycle-compiler
+    // alternately - if using Java8, use the following instead of lifecycle-compiler (https://developer.android.com/jetpack/androidx/releases/lifecycle)
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+
+    //Glide (https://github.com/bumptech/glide)
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
 }

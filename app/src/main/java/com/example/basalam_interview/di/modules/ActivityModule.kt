@@ -1,6 +1,6 @@
-package com.example.basalam_interview.Di.Modules
+package com.example.basalam_interview.di.modules
 
-import com.example.basalam_interview.Main.MainActivity
+import com.example.basalam_interview.main.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

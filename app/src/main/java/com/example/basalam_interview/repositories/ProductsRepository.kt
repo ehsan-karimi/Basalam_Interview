@@ -1,14 +1,12 @@
-package com.example.basalam_interview.Repositories
+package com.example.basalam_interview.repositories
 
 import Json4Kotlin_Base
-import android.util.Log
 import androidx.lifecycle.LiveData
-import com.example.basalam_interview.Model.Entities.Products
-import com.example.basalam_interview.Model.LocalDataSource.ProductsDao
-import com.example.basalam_interview.Model.RemoteDataSource.Api_Interface
+import com.example.basalam_interview.model.entities.Products
+import com.example.basalam_interview.model.localDataSource.ProductsDao
+import com.example.basalam_interview.model.remoteDataSource.Api_Interface
 import com.google.gson.Gson
 import com.google.gson.JsonObject
-import org.json.JSONObject
 
 class ProductsRepository(
     private val productsDao: ProductsDao,
@@ -17,6 +15,7 @@ class ProductsRepository(
 
     private lateinit var setProducts: Products
 
+    //get data from server and save to database
     suspend fun refreshProducts() {
         val rootObject = JsonObject()
         rootObject.addProperty(
